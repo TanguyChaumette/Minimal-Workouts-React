@@ -24,7 +24,7 @@ function App() {
 
       <div className='h-[1px] bg-lightgray w-full max-w-[800px]'></div>
 
-      <div className='flex justify-top items-start'>
+      <div className='flex justify-top items-start gap-[32px]'>
         <div className='flex flex-col items-start justify-center min-w-[50%] text-start gap-[12px]'>
           <h4 className='text-darkgray'>1/2</h4>
           <h1>How long can you workout today?</h1>
