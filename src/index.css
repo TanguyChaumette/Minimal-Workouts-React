@@ -14,7 +14,7 @@
   }
 
   h1 {
-    @apply text-[36px] leading-[46px];
+    @apply text-[36px] leading-[50px];
   }
 
   h2 {
