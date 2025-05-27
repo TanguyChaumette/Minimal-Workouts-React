@@ -9,7 +9,7 @@ function App() {
 
   return (
     <>
-    <div className='flex flex-col gap-[64px] items-center justify-center max-w-[800px] m-auto h-screen pb-[10vh]'>
+    <div className='flex flex-col gap-[64px] items-center justify-center max-w-[800px] m-auto h-full mt-[15vh]'>
 
       <div className="flex flex-col gap-[24px] max-w-[500px] items-center justify-center">
         <h2>Minimal Workouts</h2>
