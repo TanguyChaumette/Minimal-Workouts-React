@@ -14,7 +14,7 @@ function App() {
 
         <div className="flex flex-col gap-[24px] max-w-[500px] items-center justify-center">
           <h2>Minimal Workouts</h2>
-          <p className="text-darkgray">You are only need 2 clicks and a floor away from a great workout that will get you energized. We recommend that you follow our routine once every two days, at a least 3 times a week.</p>
+          <p className="text-darkgray">Our minimal workouts are designed to energize you anytime, anywhere with no equipment. For best results, we recommend doing a session every other day, at least three times a week.</p>
           <div className="flex gap-[32px] items-center justify-center">
             <button className="link-button">All Workouts</button>
             <button className="link-button">Past Workouts</button>
