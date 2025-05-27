@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #191919;
+  --color-darkgray: #939393;
+  --color-lightgray: #DADADA;
+  --color-offwhite: #EBEBEB;
+}
+
+@layer base {
+
+  body {
+    @apply m-0 p-0 font-[Inter] tracking-tighter bg-offwhite text-primary;
+  }
+
+  h1 {
+    @apply text-[36px] leading-[46px];
+  }
+
+  h2 {
+    @apply text-[20px] leading-[30px];
+  }
+
+  h4 {
+    @apply text-[14px] leading-[24px];
+  }
+
+  p {
+    @apply text-[16px] leading-[26px]
+  }
+
+  .link-button {
+    @apply text-[14px] underline underline-offset-4 cursor-pointer;
+  }
+}
