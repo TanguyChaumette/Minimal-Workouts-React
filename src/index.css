@@ -41,4 +41,8 @@
   .link-button {
     @apply text-[14px] underline underline-offset-4 cursor-pointer;
   }
+
+  button {
+    @apply cursor-pointer;
+  }
 }

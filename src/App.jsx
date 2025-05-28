@@ -21,18 +21,28 @@ function App() {
         </div>
       </div>
         
-      <div className="flex gap-[16px] absolute  right-1 bottom-0 mb-[64px] mr-[32px]">
-        <img src="/icons/music.svg" alt="Music" />
-        <img src="/icons/sound.svg" alt="Sound" />
+      <div className="flex gap-[16px] absolute  right-1 bottom-0 mb-[60px] mr-[32px]">
+        <button>
+          <img src="/icons/music.svg" alt="Music" />
+        </button>
+        <button>
+          <img src="/icons/sound.svg" alt="Sound" />
+        </button>
       </div>
 
       <div className="flex flex-col gap-[16px] absolute bottom-0 left-1/2 transform -translate-x-1/2 mb-[32px]">
         <div className="flex justify-center items-center gap-[16px]">
-          <img src="/icons/pause.svg" alt="Pause" />
-          <div className='h-[4px] w-[400px] bg-darkgray'></div>
-          <img src="/icons/next.svg" alt="Next" />
+          <button>
+            <img src="/icons/pause.svg" alt="Pause" />
+          </button>
+          <div className='h-[4px] w-[400px] bg-darkgray'>
+            <div className="relative h-[4px] w-[40px] bg-primary"></div>
+          </div>
+          <button>
+            <img src="/icons/next.svg" alt="Next" />
+          </button>
         </div>
-        <h2 className='text-[24px] mt-[-16px]'>0%</h2>
+        <h2 className='text-[24px] mt-[-16px]'>10%</h2>
       </div>
       
     </>
