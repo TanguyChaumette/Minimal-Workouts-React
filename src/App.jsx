@@ -2,43 +2,38 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import DurationCard from './components/DurationCard'
+import WorkoutTypeCard from './components/WorkoutTypeCard'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-    <div className="min-h-screen flex items-center justify-center px-4">
-      <div className="flex flex-col gap-[64px] items-center justify-center max-w-[800px] w-full pb-[10vh]">
 
-        <div className="flex flex-col gap-[24px] max-w-[500px] items-center justify-center">
-          <h2>Minimal Workouts</h2>
-          <p className="text-darkgray">Our minimal workouts are designed to energize you anytime, anywhere with no equipment. For best results, we recommend doing a session every other day, at least three times a week.</p>
-          <div className="flex gap-[32px] items-center justify-center">
-            <button className="link-button">All Workouts</button>
-            <button className="link-button">Past Workouts</button>
-            <button className="link-button">Pricing</button>
-            <button className="link-button">Log In</button>
-          </div>
-        </div>
+      <img src="/images/bg-workout.jpg" alt="Workout" className="fixed top-0 left-0 w-full h-full object-cover z-[-1]"/>
 
-        <div className='h-[1px] bg-lightgray w-full max-w-[800px]'></div>
+      <h1 className='absolute mt-[32px] left-1/2 transform -translate-x-1/2 -translate-y-1/2'>Jumping Jacks</h1>
 
-        <div className='flex justify-top items-start gap-[32px]'>
-          <div className='flex flex-col items-start justify-center w-[50%] text-start gap-[12px]'>
-            <h4 className='text-darkgray'>1/2</h4>
-            <h1>How long can you workout today?</h1>
-          </div>
-          <div className="grid grid-cols-2 gap-[12px] w-[50%]">
-            <DurationCard title='Energizer' duration='10'/>
-            <DurationCard title="Get Movin'" duration='20'/>
-            <DurationCard title="Just Enough" duration='30'/>
-            <DurationCard title="Full Session" duration='40'/>
-          </div>
+      <div className='absolute mt-[16px] ml-[16px]'>
+        <div className='border-[4px] border-darkgray h-[140px] w-[140px] flex justify-center items-center'>
+          <h1 className="text-[48px]">
+            0
+          </h1>
         </div>
       </div>
-    </div>
+        
+      <div className="flex gap-[16px] absolute  right-1 bottom-0 mb-[64px] mr-[32px]">
+        <img src="/icons/music.svg" alt="Music" />
+        <img src="/icons/sound.svg" alt="Sound" />
+      </div>
+
+      <div className="flex flex-col gap-[16px] absolute bottom-0 left-1/2 transform -translate-x-1/2 mb-[32px]">
+        <div className="flex justify-center items-center gap-[16px]">
+          <img src="/icons/pause.svg" alt="Pause" />
+          <div className='h-[4px] w-[400px] bg-darkgray'></div>
+          <img src="/icons/next.svg" alt="Next" />
+        </div>
+        <h2 className='text-[24px] mt-[-16px]'>0%</h2>
+      </div>
       
     </>
   )
