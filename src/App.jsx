@@ -9,7 +9,11 @@ function App() {
 
   return (
     <>
-      <img src="/images/bg-workout.jpg" alt="Workout" className="fixed top-0 left-0 w-full h-full object-cover z-[-1]"/>
+      {/* <img src="/images/bg-workout.jpg" alt="Workout" className="fixed top-0 left-0 w-full h-full object-cover z-[-1]"/> */}
+
+      <video className='fixed top-0 left-0 w-full h-full object-cover z-[-1]' autoPlay loop muted>
+          <source src="/videos/jumping-jacks.mp4" type='video/mp4' />
+      </video>
 
       <h1 className='absolute mt-[32px] left-1/2 transform -translate-x-1/2 -translate-y-1/2'>Jumping Jacks</h1>
 
