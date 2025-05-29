@@ -7,7 +7,7 @@ function WorkoutTypeCard(props) {
       onClick={onClick}
     >
       <h4 className="text-darkgray">{title}</h4>
-      <h1 className="text-[24px] md:text-[36px] text-center mt-[8px] md:mt-[8px]">{type}</h1>
+      <h1 className="text-[24px] md:text-[38px] text-center mt-[8px] md:mt-[8px]">{type}</h1>
     </div>
   );
 }

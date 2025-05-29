@@ -206,7 +206,7 @@ const Workout = () => {
       </video>
 
       {/* Exercise name - smaller on mobile */}
-      <h1 className='absolute mt-[16px] md:mt-[32px] left-1/2 transform -translate-x-1/2 text-center px-4 w-full md:w-auto text-[20px] md:text-[36px]'>
+      <h1 className='absolute mt-[16px] md:mt-[32px] right-0 text-center px-4 w-full md:w-auto text-[20px] md:text-[36px]'>
         {currentExercise.name}
       </h1>
 

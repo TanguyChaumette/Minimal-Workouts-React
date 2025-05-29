@@ -16,10 +16,13 @@
 }
 
 @layer base {
+  html, body {
+    @apply h-full;
+  }
 
   body {
     font-family: 'Inter';
-    @apply m-0 p-0 tracking-tighter bg-offwhite text-primary h-full overflow-hidden;
+    @apply m-0 p-0 tracking-tighter bg-offwhite text-primary overflow-y-auto;
   }
 
   h1 {

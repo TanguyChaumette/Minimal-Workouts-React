@@ -8,6 +8,12 @@ export const workoutTypes = {
         duration: 10,
         steps: [
           {
+            name: 'Get Ready',
+            duration: 10,
+            videoUrl: '/videos/start-1.mp4',
+            isBreak: false
+          },
+          {
             name: 'Jumping Jacks',
             duration: 30,
             videoUrl: '/videos/jumping-jacks.mp4',
@@ -15,8 +21,8 @@ export const workoutTypes = {
           },
           {
             name: 'Break',
-            duration: 30,
-            videoUrl: '/videos/break.mp4',
+            duration: 20,
+            videoUrl: '/videos/break-1.mp4',
             isBreak: true
           },
           {
@@ -34,7 +40,7 @@ export const workoutTypes = {
           {
             name: 'Break',
             duration: 30,
-            videoUrl: '/videos/break.mp4',
+            videoUrl: '/videos/break-1.mp4',
             isBreak: true
           },
           {
