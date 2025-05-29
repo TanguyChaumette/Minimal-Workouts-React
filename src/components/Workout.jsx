@@ -194,7 +194,7 @@ const Workout = () => {
   const currentExercise = workout.steps[currentStep];
 
   return (
-    <div className="min-h-screen relative">
+    <div className="min-h-screen relative overflow-hidden">
       <video 
         ref={videoRef}
         className='fixed top-0 left-0 w-full h-full object-cover z-[-1]' 
@@ -205,18 +205,33 @@ const Workout = () => {
         <source src={currentExercise.videoUrl} type='video/mp4' />
       </video>
 
-      <h1 className='absolute mt-[32px] left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
+      {/* Exercise name - smaller on mobile */}
+      <h1 className='absolute mt-[16px] md:mt-[32px] left-1/2 transform -translate-x-1/2 text-center px-4 w-full md:w-auto text-[20px] md:text-[36px]'>
         {currentExercise.name}
       </h1>
 
+      {/* Square Timer */}
       <div className='absolute mt-[16px] ml-[16px]'>
-        <SquareTimer 
-          duration={currentExercise.duration}
-          current={timeRemaining}
-        />
+        <div className="w-[100px] h-[100px] md:w-[140px] md:h-[140px]">
+          <SquareTimer 
+            duration={currentExercise.duration}
+            current={timeRemaining}
+          />
+        </div>
       </div>
-        
-      <div className="flex gap-[16px] absolute right-1 bottom-0 mb-[68px] mr-[32px]">
+
+      {/* Sound controls - top right on mobile */}
+      <div className="md:hidden absolute top-4 right-4 flex gap-3">
+        <button className="w-[40px] h-[40px] flex items-center justify-center">
+          <img src="/icons/music.svg" alt="Music" className="w-6 h-6" />
+        </button>
+        <button className="w-[40px] h-[40px] flex items-center justify-center">
+          <img src="/icons/sound.svg" alt="Sound" className="w-6 h-6" />
+        </button>
+      </div>
+
+      {/* Desktop sound controls */}
+      <div className="hidden md:flex gap-[16px] absolute right-1 bottom-0 mb-[68px] mr-[32px]">
         <button>
           <img src="/icons/music.svg" alt="Music" />
         </button>
@@ -225,7 +240,41 @@ const Workout = () => {
         </button>
       </div>
 
-      <div className="flex flex-col gap-[16px] absolute bottom-0 left-1/2 transform -translate-x-1/2 mb-[40px]">
+      {/* Mobile controls */}
+      <div className="md:hidden fixed bottom-0 left-0 right-0 bg-gradient-to-t from-black/50 to-transparent pb-4 pt-8">
+        <div className="flex flex-col items-center gap-4">
+          <div className="flex justify-between items-center w-full px-6 mb-2">
+            <button 
+              onClick={handlePlayPause}
+              className="w-[40px] h-[40px] flex items-center justify-center"
+            >
+              <img 
+                src={!isPlaying ? "/icons/play.svg" : "/icons/pause.svg"} 
+                alt={isPlaying ? "Pause" : "Play"}
+                className="w-6 h-6"
+              />
+            </button>
+
+            <div className='h-[4px] w-[200px] bg-darkgray rounded-full overflow-hidden'>
+              <div 
+                className="relative h-full bg-primary transition-all duration-300"
+                style={{ width: `${progress.totalProgress}%` }}
+              ></div>
+            </div>
+
+            <button 
+              onClick={handleNext}
+              className="w-[40px] h-[40px] flex items-center justify-center"
+            >
+              <img src="/icons/next.svg" alt="Next" className="w-6 h-6" />
+            </button>
+          </div>
+          <h2 className='text-[18px]'>{Math.round(progress.totalProgress)}%</h2>
+        </div>
+      </div>
+
+      {/* Desktop controls */}
+      <div className="hidden md:flex flex-col gap-[16px] absolute bottom-0 left-1/2 transform -translate-x-1/2 mb-[40px]">
         <div className="flex justify-center items-center gap-[16px]">
           <button onClick={handlePlayPause}>
             <img src={!isPlaying ? "/icons/play.svg" : "/icons/pause.svg"} alt={isPlaying ? "Pause" : "Play"} />
@@ -240,7 +289,7 @@ const Workout = () => {
             <img src="/icons/next.svg" alt="Next" />
           </button>
         </div>
-        <h2 className='text-[24px] mt-[-16px]'>{Math.round(progress.totalProgress)}%</h2>
+        <h2 className='text-[24px] mt-[-16px] text-center'>{Math.round(progress.totalProgress)}%</h2>
       </div>
     </div>
   );

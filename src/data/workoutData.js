@@ -30,7 +30,19 @@ export const workoutTypes = {
             duration: 30,
             videoUrl: '/videos/squats.mp4',
             isBreak: false
-          }
+          },
+          {
+            name: 'Break',
+            duration: 30,
+            videoUrl: '/videos/break.mp4',
+            isBreak: true
+          },
+          {
+            name: 'Burpees',
+            duration: 30,
+            videoUrl: '/videos/burpees.mp4',
+            isBreak: false
+          },
         ]
       }
     }

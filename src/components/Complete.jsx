@@ -21,7 +21,7 @@ const Complete = () => {
         muted 
         loop
       >
-        <source src="/videos/squats.mp4" type='video/mp4' />
+        <source src="/videos/cheering.mp4" type='video/mp4' />
       </video>
 
       <div className="flex flex-col items-center gap-[16px]  p-[32px] bg-offwhite">
