@@ -11,7 +11,7 @@ function App() {
     <>
       {/* <img src="/images/bg-workout.jpg" alt="Workout" className="fixed top-0 left-0 w-full h-full object-cover z-[-1]"/> */}
 
-      <video className='fixed top-0 left-0 w-full h-full object-cover z-[-1]' autoPlay loop muted>
+      <video className='fixed top-0 left-0 w-full h-full object-cover z-[-1]' autoPlay loop playsInline>
           <source src="/videos/jumping-jacks.mp4" type='video/mp4' />
       </video>
 
