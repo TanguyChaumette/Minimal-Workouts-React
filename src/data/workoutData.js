@@ -40,7 +40,7 @@ export const workoutTypes = {
           {
             name: 'Break',
             duration: 30,
-            videoUrl: '/videos/break-1.mp4',
+            videoUrl: '/videos/break-2.mp4',
             isBreak: true
           },
           {
