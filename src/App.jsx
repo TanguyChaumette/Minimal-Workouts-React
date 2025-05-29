@@ -25,7 +25,7 @@ function App() {
         </div>
       </div>
         
-      <div className="flex gap-[16px] absolute  right-1 bottom-0 mb-[60px] mr-[32px]">
+      <div className="flex gap-[16px] absolute  right-1 bottom-0 mb-[36px] mr-[32px]">
         <button>
           <img src="/icons/music.svg" alt="Music" />
         </button>
@@ -34,7 +34,7 @@ function App() {
         </button>
       </div>
 
-      <div className="flex flex-col gap-[16px] absolute bottom-0 left-1/2 transform -translate-x-1/2 mb-[32px]">
+      <div className="flex flex-col gap-[16px] absolute bottom-0 left-1/2 transform -translate-x-1/2 mb-[8px]">
         <div className="flex justify-center items-center gap-[16px]">
           <button>
             <img src="/icons/pause.svg" alt="Pause" />
