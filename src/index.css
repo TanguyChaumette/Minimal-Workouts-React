@@ -42,6 +42,10 @@
     @apply text-[14px] underline underline-offset-4 cursor-pointer;
   }
 
+  .link-button-2 {
+    @apply text-[14px] border border-lightgray p-[12px];
+  }
+
   button {
     @apply cursor-pointer;
   }

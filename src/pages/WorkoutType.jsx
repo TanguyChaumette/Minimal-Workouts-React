@@ -14,11 +14,11 @@ function WorkoutType() {
           <div className="flex flex-col gap-[24px] max-w-[500px] items-center justify-center">
             <h2>Minimal Workouts</h2>
             <p className="text-darkgray">Our minimal workouts are designed to energize you anytime, anywhere with no equipment. For best results, we recommend doing a session every other day, at least three times a week.</p>
-            <div className="flex gap-[32px] items-center justify-center">
-              <button className="link-button">All Workouts</button>
-              <button className="link-button">Past Workouts</button>
-              <button className="link-button">Pricing</button>
-              <button className="link-button">Log In</button>
+            <div className="flex gap-[12px] items-center justify-center">
+              <button className="link-button-2">All Workouts</button>
+              <button className="link-button-2">Past Workouts</button>
+              <button className="link-button-2">Pricing</button>
+              <button className="link-button-2">Log In</button>
             </div>
           </div>
 

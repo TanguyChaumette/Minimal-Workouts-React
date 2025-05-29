@@ -6,9 +6,9 @@ function DurationCard(props) {
     <>
       <div className="flex flex-col border-1 border-lightgray aspect-square w-full cursor-pointer">
         <h4 className="text-darkgray mt-[16px]">{title}</h4>
-        <div className=" flex flex-col mt-[32px] gap-[16px]">
-          <h1 className="text-[64px]">{duration}</h1>
-          <p>min</p>
+        <div className=" flex flex-col mt-[28px] gap-[16px]">
+          <h1 className="text-[48px]">{duration}</h1>
+          <p className="mt-[-8px]">min</p>
         </div>
       </div>
     </>

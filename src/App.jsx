@@ -3,12 +3,12 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import WorkoutTypeCard from './components/WorkoutTypeCard'
+import DurationCard from './components/DurationCard'
 
 function App() {
 
   return (
     <>
-
       <img src="/images/bg-workout.jpg" alt="Workout" className="fixed top-0 left-0 w-full h-full object-cover z-[-1]"/>
 
       <h1 className='absolute mt-[32px] left-1/2 transform -translate-x-1/2 -translate-y-1/2'>Jumping Jacks</h1>
@@ -44,7 +44,6 @@ function App() {
         </div>
         <h2 className='text-[24px] mt-[-16px]'>10%</h2>
       </div>
-      
     </>
   )
 }
