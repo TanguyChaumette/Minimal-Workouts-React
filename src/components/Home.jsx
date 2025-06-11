@@ -12,7 +12,7 @@ const Home = () => {
   };
 
   return (
-    <div className="min-h-screen md:h-screen flex items-center justify-center px-2 md:px-4">
+    <div className="min-h-screen md:h-screen flex items-center justify-center px-2 md:px-4 overflow-y-auto md:overflow-hidden">
       <div className="flex flex-col gap-[32px] md:gap-[48px] items-center justify-center max-w-[800px] w-full py-8 md:py-0">
         <h2>SuperGymbo</h2>
 
