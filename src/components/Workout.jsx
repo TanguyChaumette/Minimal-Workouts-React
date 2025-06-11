@@ -258,7 +258,7 @@ const Workout = () => {
 
             <div className='h-[4px] w-[calc(100%-120px)] bg-darkgray rounded-full overflow-hidden'>
               <div 
-                className="relative h-full bg-primary transition-all duration-300 mt-[-16px]"
+                className="relative h-full bg-primary transition-all duration-300"
                 style={{ width: `${progress.totalProgress}%` }}
               ></div>
             </div>
@@ -270,7 +270,7 @@ const Workout = () => {
               <img src="/icons/next.svg" alt="Next" className="w-6 h-6" />
             </button>
           </div>
-          <h2 className='text-[18px]'>{Math.round(progress.totalProgress)}%</h2>
+          <h2 className='text-[18px] mt-[-16px]'>{Math.round(progress.totalProgress)}%</h2>
         </div>
       </div>
 
