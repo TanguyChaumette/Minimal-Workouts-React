@@ -18,8 +18,8 @@ const WorkoutType = () => {
   };
 
   return (
-    <div className="h-screen flex items-center justify-center px-4">
-      <div className="flex flex-col gap-[32px] md:gap-[48px] items-center justify-center max-w-[800px] w-full">
+    <div className="min-h-screen md:h-screen flex items-center justify-center px-2 md:px-4">
+      <div className="flex flex-col gap-[32px] md:gap-[48px] items-center justify-center max-w-[800px] w-full py-8 md:py-0">
         <h2>SuperGymbo</h2>
 
         <div className='h-[1px] bg-lightgray w-full max-w-[800px]'></div>
@@ -37,19 +37,12 @@ const WorkoutType = () => {
             </a>
           </div>
           
-          <div className="grid grid-cols-2 gap-[12px] w-full md:w-[50%]">
+          <div className="grid grid-cols-2 gap-[12px] w-full md:w-[50%] aspect-square">
             <WorkoutTypeCard title='All In' type='Full Body' onClick={() => handleTypeSelect('fullBody')}/>
             <WorkoutTypeCard title='Good Pump' type='Upper Body' onClick={() => handleTypeSelect('upperBody')}/>
             <WorkoutTypeCard title='Engine Running' type='Lower Body' onClick={() => handleTypeSelect('lowerBody')}/>
             <WorkoutTypeCard title="Let's Sweat" type='Cardio HIIT' onClick={() => handleTypeSelect('cardioHiit')}/>
           </div>
-
-          {/* <a href="/" className="md:hidden w-full flex justify-start mt-2">
-            <div className="flex gap-[8px] items-center">
-              <img src="/icons/arrow-back.svg" alt="Arrow Back" />
-              <h4 className="text-darkgray">Previous</h4>
-            </div>
-          </a> */}
         </div>
 
         <div className='h-[1px] bg-lightgray w-full max-w-[800px]'></div>

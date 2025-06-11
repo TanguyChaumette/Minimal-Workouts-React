@@ -3,7 +3,7 @@ function WorkoutTypeCard(props) {
 
   return (
     <div 
-      className="flex flex-col items-center justify-center border-1 border-lightgray aspect-square w-full cursor-pointer hover:bg-gray-50 transition-colors p-4"
+      className="flex flex-col items-center justify-center border-1 border-lightgray w-full h-full cursor-pointer hover:bg-gray-50 transition-colors p-4"
       onClick={onClick}
     >
       <h4 className="text-darkgray">{title}</h4>

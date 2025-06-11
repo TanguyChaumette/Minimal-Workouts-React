@@ -197,22 +197,23 @@ const Workout = () => {
     <div className="min-h-screen relative overflow-hidden">
       <video 
         ref={videoRef}
-        className='fixed top-0 left-0 w-full h-full object-cover z-[-1]' 
+        className='fixed top-0 left-0 w-full h-full object-cover z-[-1] pointer-events-none' 
         autoPlay 
         muted 
         loop
+        playsInline
       >
         <source src={currentExercise.videoUrl} type='video/mp4' />
       </video>
 
       {/* Exercise name - smaller on mobile */}
-      <h1 className='absolute mt-[16px] md:mt-[32px] right-0 text-center px-4 w-full md:w-auto text-[20px] md:text-[36px]'>
+      <h1 className='absolute mt-[96px] md:mt-[32px] right-0 text-center px-4 w-full md:w-auto text-[20px] md:text-[36px]'>
         {currentExercise.name}
       </h1>
 
-      {/* Square Timer */}
-      <div className='absolute mt-[16px] ml-[16px]'>
-        <div className="w-[100px] h-[100px] md:w-[140px] md:h-[140px]">
+      {/* Square Timer - smaller on mobile */}
+    <div className='absolute mt-[2px] md:mt-[16px] ml-[2px] md:ml-[16px]'>
+        <div className="w-[80px] h-[80px] md:w-[140px] md:h-[140px]">
           <SquareTimer 
             duration={currentExercise.duration}
             current={timeRemaining}
@@ -221,7 +222,7 @@ const Workout = () => {
       </div>
 
       {/* Sound controls - top right on mobile */}
-      <div className="md:hidden absolute top-4 right-4 flex gap-3">
+      <div className="md:hidden absolute top-[8px] right-[8px] flex gap-3">
         <button className="w-[40px] h-[40px] flex items-center justify-center">
           <img src="/icons/music.svg" alt="Music" className="w-6 h-6" />
         </button>
@@ -243,7 +244,7 @@ const Workout = () => {
       {/* Mobile controls */}
       <div className="md:hidden fixed bottom-0 left-0 right-0 bg-gradient-to-t from-black/50 to-transparent pb-4 pt-8">
         <div className="flex flex-col items-center gap-4">
-          <div className="flex justify-between items-center w-full px-6 mb-2">
+          <div className="flex justify-between items-center w-full px-4">
             <button 
               onClick={handlePlayPause}
               className="w-[40px] h-[40px] flex items-center justify-center"
@@ -255,9 +256,9 @@ const Workout = () => {
               />
             </button>
 
-            <div className='h-[4px] w-[200px] bg-darkgray rounded-full overflow-hidden'>
+            <div className='h-[4px] w-[calc(100%-120px)] bg-darkgray rounded-full overflow-hidden'>
               <div 
-                className="relative h-full bg-primary transition-all duration-300"
+                className="relative h-full bg-primary transition-all duration-300 mt-[-16px]"
                 style={{ width: `${progress.totalProgress}%` }}
               ></div>
             </div>

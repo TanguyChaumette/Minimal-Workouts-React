@@ -12,8 +12,8 @@ const Home = () => {
   };
 
   return (
-    <div className="h-screen flex items-center justify-center px-4">
-      <div className="flex flex-col gap-[32px] md:gap-[48px] items-center justify-center max-w-[800px] w-full">
+    <div className="min-h-screen md:h-screen flex items-center justify-center px-2 md:px-4">
+      <div className="flex flex-col gap-[32px] md:gap-[48px] items-center justify-center max-w-[800px] w-full py-8 md:py-0">
         <h2>SuperGymbo</h2>
 
         <div className='h-[1px] bg-lightgray w-full max-w-[800px]'></div>
@@ -23,7 +23,7 @@ const Home = () => {
             <h4 className="text-darkgray">1/2</h4>
             <h1>How long can you workout today?</h1>
           </div>
-          <div className="grid grid-cols-2 gap-[12px] w-full md:w-[50%]">
+          <div className="grid grid-cols-2 gap-[12px] w-full md:w-[50%] aspect-square">
             <DurationCard
               title="Energizer"
               duration="10"
@@ -51,7 +51,7 @@ const Home = () => {
 
         <div className="flex flex-col gap-[24px] max-w-[500px] items-center justify-center px-4">
           <p className="text-darkgray text-center">
-          Just pick how long you want to workout and SuperGymbo will take care of the rest.
+            Just pick how long you want to workout and SuperGymbo will take care of the rest.
           </p>
           <div className="flex flex-wrap gap-[12px] items-center justify-center">
             <button className="link-button-2">All Workouts</button>

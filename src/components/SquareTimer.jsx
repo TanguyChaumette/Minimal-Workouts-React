@@ -1,6 +1,6 @@
 function SquareTimer({ duration, current }) {
-  const size = 140;
-  const stroke = 4;
+  const size = window.innerWidth < 768 ? 80 : 140;
+  const stroke = window.innerWidth < 768 ? 3 : 4;
   const normalizedSize = size - stroke * 2;
   const perimeter = normalizedSize * 4;
   const progress = (duration - current) / duration;
@@ -36,7 +36,7 @@ function SquareTimer({ duration, current }) {
         y="50%"
         textAnchor="middle"
         dy=".3em"
-        fontSize="48"
+        fontSize={window.innerWidth < 768 ? "32" : "48"}
         fill="rgb(32,38,38)"
       >
         {Math.ceil(current)}
