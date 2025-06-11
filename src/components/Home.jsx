@@ -12,9 +12,9 @@ const Home = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center px-4 overflow-y-auto">
+    <div className="h-screen flex items-center justify-center px-4">
       <div className="flex flex-col gap-[32px] md:gap-[48px] items-center justify-center max-w-[800px] w-full">
-          <h2>Minimal Workouts</h2>
+        <h2>SuperGymbo</h2>
 
         <div className='h-[1px] bg-lightgray w-full max-w-[800px]'></div>
 
@@ -51,8 +51,7 @@ const Home = () => {
 
         <div className="flex flex-col gap-[24px] max-w-[500px] items-center justify-center px-4">
           <p className="text-darkgray text-center">
-            Our minimal workouts are designed to energize you anytime, anywhere with no equipment.
-            For best results, we recommend doing a session every other day, at least three times a week.
+          Just pick how long you want to workout and SuperGymbo will take care of the rest.
           </p>
           <div className="flex flex-wrap gap-[12px] items-center justify-center">
             <button className="link-button-2">All Workouts</button>
